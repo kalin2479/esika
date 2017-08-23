@@ -1,0 +1,164 @@
+.contentProduct
+	padding-bottom 50px
+	.listProducts
+		padding-top 80px
+		.container
+			display flex
+			flex-direction column
+			flex-wrap wrap
+			@media screen and (min-width:768px)
+				display flex
+				flex-direction row
+				justify-content space-between
+				align-items top
+			.showcase
+				width auto
+				padding 20px 10px
+				text-align center
+				margin-bottom 80px
+				box-shadow(-1px 8px 10px 0px rgba(0,0,0,0.21))
+				transition .9s all ease
+				&:hover
+					transform scale(1.05)
+				figure
+					padding-bottom 20px
+					img
+						height 137px
+				@media screen and (min-width:768px)
+					figure
+						img
+							height 100px
+				@media screen and (min-width:992px)
+					padding 20px 20px
+					figure
+						img
+							height 127px
+				@media screen and (min-width:1200px)
+					padding 20px 40px
+					figure
+						img
+							height 137px
+				.priceProduct
+					h2
+						font-generator(f_lato,12px,300,black,none)
+					h3
+						font-generator(f_lato,14px,700,black,none)
+					.addCar
+						padding-top 25px
+						display flex
+						flex-direction row
+						justify-content center
+						align-items top
+						.btnAddCar
+							border 1px solid #cdcdcd
+							background #cdcdcd
+							height 48px
+							width 120px
+							margin-left 30px
+							font-generator(f_lato,16px,700,white,none)
+							line-height 2.95em
+							transition 0.9s all ease
+							&:hover
+								background c_red
+						.mainControl
+							display flex
+							flex-direction row
+							justify-content flex-start
+							align-items top
+							.controlButtons
+								border 1px solid #c7c7c7
+								width 24px
+								height 48px
+								a
+									display block
+									height 24px
+									&:first-child
+										border-bottom 1px solid #c7c7c7
+									span
+										font-size 13px
+										line-height 2.0em
+										color #989898
+										transition(.5s all ease)
+									&:hover
+										span
+											color c_red
+											
+							.countProduct
+								border-left 1px solid #E2E2E2
+								border-top 1px solid #E2E2E2
+								border-bottom 1px solid #E2E2E2
+								width 45px
+								height 48px
+								span
+									text-align center
+									line-height 1.70em
+									font-generator(f_lato,28px,900,#cdcdcd,none)
+									
+					.blockPrice
+						p
+							display inline-block
+							vertical-align bottom
+							margin 0
+							font-generator(f_lato,20px,700,black,none)
+							&:first-child
+								margin-right 5px
+								padding-bottom 1px
+								font-generator(f_lato,12px,300,black,line-through)
+	.menuProduct
+		.container
+			display flex
+			flex-direction row
+			justify-content space-between
+			align-items center
+			.menuFilder
+				display flex
+				flex-direction row
+				justify-content flex-start
+				align-items top
+				.optionMenu
+					margin-right 15px
+					&:last-child
+						margin-right 0
+					&:first-child
+						relative top left
+						display flex
+						flex-direction row
+						justify-content space-between
+						align-items center					
+						input[type=text]
+							width 100px
+							height 29px
+							font-generator(f_lato,12px,400,c_black_text,none)
+							padding 10px 15px
+							@media screen and (min-width:992px)
+								width 160px
+							@media screen and (min-width:1200px)
+								width 244px
+								font-size 13px
+						.icon-search
+							border 1px solid #E02922
+							background #E02922
+							color white
+							font-size 25px
+							text-align center
+							line-height 1.95em
+							height 49px
+							width 55px
+					
+			.menuOffer
+				background linear-gradient(left, #D6251F, #A61113)
+				height 51px
+				width 186px
+				padding-left 20px
+				relative top left
+				.triangle
+					width 0
+					height 0
+					border-bottom 51px solid white
+					border-left 15px solid transparent
+					absolute top 0 right 0
+				h2
+					letter-spacing 0.08em
+					line-height 2.7em
+					font-generator(f_lato,20px,700,white,none)
+				

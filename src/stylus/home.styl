@@ -1,0 +1,104 @@
+.wrapperBody
+	display none
+h2
+	margin 0
+a
+	font-generator(f_lato,12px,300,black,none)
+	&:hover
+		color c_red
+		transition(0.5s all ease)
+figure
+	margin 0
+	
+input[type=text]
+	border 1px solid black
+	outline 0
+	&:focus
+		outline 0 
+	&::placeholder
+		color c_black_text
+
+.blockSelect
+	background transparent
+	border-radius(0px)
+	cursor pointer
+	margin-top 0px
+	padding 0px
+	border 1px solid black
+	height 49px
+	width 216px
+	relative top left
+	z-index 1
+	ul
+		&.listSelect
+			background: none repeat scroll 0 0 #fff
+			border 1px solid #dedede
+			display none
+			margin-left 0
+			margin-top 49px
+			padding-left 0
+			absolute top 0px left -1px
+			text-indent 15px
+			li
+				border-bottom 1px solid #efefef
+				cursor pointer
+				display block
+				list-style outside none none
+				margin 0
+				padding 10px 0.3em
+				width 100%
+				a
+					font-generator(f_lato,13px,400,c_black_text,none)
+					&:hover
+						color #999797
+						text-decoration none
+	.itemSelected
+		font-generator(f_lato,12px,400,c_black_text,none)
+		display block
+		padding 17px 0 0 10px
+		@media screen and (min-width:1200px)
+			font-size 13px
+	.lowerTriangle
+		border-left 9px solid rgba(0, 0, 0, 0)
+		border-right 9px solid rgba(0, 0, 0, 0)
+		border-top 13px solid #E02922
+		height 0
+		absolute top 20px right 5px
+		width 0
+		@media screen and (min-width:1200px)
+			absolute top 21px right 10px
+	.upperTriangle 
+		border-bottom 13px solid #E02922
+		border-left 9px solid rgba(0, 0, 0, 0);
+		border-right 9px solid rgba(0, 0, 0, 0);
+		height 0
+		absolute top 20px right 5px
+		@media screen and (min-width:1200px)
+			absolute top 21x right 10px
+		width 0
+#selectGain
+	width 90px
+	@media screen and (min-width:992px)
+		width 190px	
+	@media screen and (min-width:1200px)
+		width 216px
+#selectPrice
+	width 90px
+	@media screen and (min-width:992px)
+		width 190px
+	@media screen and (min-width:1200px)
+		width 190px
+		
+.container
+	width 100%
+	@media screen and (min-width:320px)
+		width 300px
+		margin auto
+	@media screen and (min-width:480px)
+		width 460px
+	@media screen and (min-width:768px)
+		width 758px
+	@media screen and (min-width:992px)
+		width 986px
+	@media screen and (min-width:1200px)
+		width 1190px

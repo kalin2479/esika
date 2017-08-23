@@ -1,0 +1,143 @@
+.wrapperSlider
+	padding 0
+	margin 40px 0
+	height 528px
+	relative top 0 left 0
+	.slideNav
+		z-index 5
+		position absolute
+		right 50px
+		top 50%
+		width 50px
+		transform translateY(-50%)
+
+	.slideNav
+		ul
+			list-style none
+			color #ffffff
+			font-size 13px
+			text-align center
+			margin 0
+			padding 0
+			li
+				width 50px
+				height 50px
+				line-height 50px
+				background-color rgba(0, 0, 0, 0.7)
+				margin-bottom 1px
+				a
+					display block
+					width 50px
+					height 50px
+					position relative
+					overflow hidden
+					text-decoration none
+					color #ffffff
+	.bodySlider
+		relative top 0 left 0
+		height 100%
+		width 940px
+		margin auto
+		overflow hidden
+		.bgSlide
+			absolute top 0 left 0
+			height 100%
+			width 100%
+			z-index 1
+			&.active
+				z-index 2
+			&.slide01
+				background url('./image/VISUAL.png') no-repeat center center
+				background-size cover
+			&.slide02
+				background url('./image/slider2.png') no-repeat center center
+				background-size cover
+			.showcase
+					margin 31px 0 0 41px
+					background white
+					padding 20px 10px
+					text-align center
+					margin-bottom 80px
+					box-shadow(-1px 8px 10px 0px rgba(0,0,0,0.21))
+					transition .9s all ease
+					width 400px
+					height 416px
+					&:hover
+						transform scale(1.05)
+					figure
+						padding-bottom 20px
+					@media screen and (min-width:992px)
+						padding 20px 20px
+						width 360px
+						height 376px
+					@media screen and (min-width:1200px)
+						padding 20px 40px
+						width 320px
+						height 376px
+					.priceProduct
+						h2
+							font-generator(f_lato,16px,700,#ff0005,none)
+						h3
+							font-generator(f_lato,14px,700,black,none)
+						.addCar
+							padding-top 25px
+							display flex
+							flex-direction row
+							justify-content center
+							align-items top
+							.btnAddCar
+								border 1px solid #191919
+								background white
+								height 48px
+								width 120px
+								margin-left 30px
+								font-generator(f_lato,16px,700,#191919,none)
+								line-height 2.95em
+								transition 0.9s all ease
+								&:hover
+									background c_red
+									color white
+							.mainControl
+								display flex
+								flex-direction row
+								justify-content flex-start
+								align-items top
+								.controlButtons
+									border 1px solid #c7c7c7
+									width 24px
+									height 48px
+									a
+										display block
+										height 24px
+										&:first-child
+											border-bottom 1px solid #c7c7c7
+										span
+											font-size 13px
+											line-height 2.0em
+											color #191919
+											transition(.5s all ease)
+										&:hover
+											span
+												color c_red
+												
+								.countProduct
+									border-left 1px solid #E2E2E2
+									border-top 1px solid #E2E2E2
+									border-bottom 1px solid #E2E2E2
+									width 45px
+									height 48px
+									span
+										text-align center
+										line-height 1.70em
+										font-generator(f_lato,28px,900,#191919,none)
+										
+						.blockPrice
+							p
+								display inline-block
+								vertical-align bottom
+								margin 0
+								font-generator(f_lato,20px,700,black,none)
+								&:first-child
+									margin-right 5px
+									padding-bottom 1px
+									font-generator(f_lato,12px,300,black,line-through)
